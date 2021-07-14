@@ -1,0 +1,118 @@
+<html>
+<head>
+<style>
+
+text{
+color:white;
+}
+
+h1
+{
+   color: gold;
+}
+ul
+{
+	list-style-type; none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	display: flex;
+    justify-content: center;
+}
+li
+{
+	float:left;
+}
+
+li a
+
+{
+	display: block;
+	color: yellow;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover
+{
+	background-color: pink;
+}
+body 
+	{
+		background-image: url(bg.jpg);
+	}
+	</style>
+
+	<title>
+		CAR RENT
+	</title>
+
+	<body>
+		
+		<h1>
+			BOOK YOUR CAR 
+		</h1>
+
+		<ul>
+			<li><a class="active" href="#home">HOME</a></li>
+			<li><a href="#news">BOOKING FORM</a></li>
+			<li><a href="#contact">SERVICES</a></li>
+			<li><a href="#about">ABOUT US</a></li>
+		</ul>
+
+			<form>
+				<br>
+				<br>
+				<br>
+
+				<div class="form-group">
+					<td><span style="color:gold">Name:</span>
+					<input class="form-control" type="text" placeorder="Enter your Name">
+				</div>
+				<br>
+				<div class="form-group">
+					<td><span style="color:gold"">Phone Number:</span>
+					<input class="form-control" type="phone" placeorder="Enter your Phone Number">	
+				</div>
+				<br>
+				<div class="form-group">
+					<td><span style="color:gold"">Location :</span>
+					<input class="form-control" type="location" placeorder="Place your location">	
+				</div>
+				<br>
+				<div class="form-group">
+					<td><span style="color:gold"">Destination:</span>
+					<input class="form-control" type="place" placeorder="Enter your destination location">	
+				</div>
+				<br>
+				<div class="form-group">
+					<td><span style="color:gold">Passenger Number:</span>
+					<select class="form-control" required>
+					<option value="" label="&nsbp;" selected hideen></option>	
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+				</select>
+				<span class="select-arrow"></span>
+				</div>
+				<br>
+				<div class="col-md-6">
+				<div class="form-group">
+				<span style="color:gold"">Pickup Time:</span>
+				<input class="form-control" type="time" required>	
+				</div>
+				</br>
+
+				<action="action.php" method="post">
+				<input style="background-color: red; color: white" type="submit" value="Submit">
+	
+			</form>
+		
+		</ul>
+	</body>
+	</html>
